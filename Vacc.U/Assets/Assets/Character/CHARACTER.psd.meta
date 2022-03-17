@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: e21e1ef7b67dbc84ea726701a8d97fae
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7649413404834822264
+    second: CHARACTER_0
+  - first:
+      213: -2782003850759539673
+    second: CHARACTER_1
+  - first:
+      213: 7391522457299884156
+    second: CHARACTER_2
+  - first:
+      213: 7646395040278315659
+    second: CHARACTER_3
+  - first:
+      213: 8755387494843762356
+    second: CHARACTER_4
+  - first:
+      213: -7378761024152151341
+    second: CHARACTER_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +93,147 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CHARACTER_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 297
+        width: 620
+        height: 613
+      alignment: 9
+      pivot: {x: 0.5473731, y: 0.056761846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8787a4f96fc282a60800000000000000
+      internalID: 7649413404834822264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHARACTER_1
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 460
+        width: 467
+        height: 443
+      alignment: 9
+      pivot: {x: 0.42330757, y: 0.41712722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72475b7cc365469d0800000000000000
+      internalID: -2782003850759539673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHARACTER_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 39
+        width: 220
+        height: 246
+      alignment: 9
+      pivot: {x: 0.7557213, y: 0.8064131}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c789ea05386f39660800000000000000
+      internalID: 7391522457299884156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHARACTER_3
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 19
+        width: 186
+        height: 251
+      alignment: 9
+      pivot: {x: 0.68135256, y: 0.91898215}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82091cd6c37d1a60800000000000000
+      internalID: 7646395040278315659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHARACTER_4
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 38
+        width: 132
+        height: 311
+      alignment: 9
+      pivot: {x: 0.6631086, y: 0.9671687}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b64f0dd982618970800000000000000
+      internalID: 8755387494843762356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CHARACTER_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 20
+        width: 127
+        height: 358
+      alignment: 9
+      pivot: {x: 0.34320742, y: 0.9687363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dad9e061ff599990800000000000000
+      internalID: -7378761024152151341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -90,7 +246,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
