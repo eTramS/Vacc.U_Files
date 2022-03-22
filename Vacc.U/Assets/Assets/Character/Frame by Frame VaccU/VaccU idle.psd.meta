@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: b28302ff1b1c1424781abbe9d9181709
+guid: 887663a89a711e848a36c24145bc9ef6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5159247287918450901
-    second: planetmedium_0
+      213: 6990696036445340048
+    second: VaccU idle_0
+  - first:
+      213: 568791655729242977
+    second: VaccU idle_1
+  - first:
+      213: 8463765344893268815
+    second: VaccU idle_2
+  - first:
+      213: 8559869492394183711
+    second: VaccU idle_3
+  - first:
+      213: -1894632465018609050
+    second: VaccU idle_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -44,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -94,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: planetmedium_0
+      name: VaccU idle_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 222
-        width: 1236
-        height: 1191
+        x: 0
+        y: 0
+        width: 526
+        height: 737
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -108,8 +120,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b27293f2deba668b0800000000000000
-      internalID: -5159247287918450901
+      spriteID: 0914e01c101f30160800000000000000
+      internalID: 6990696036445340048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaccU idle_1
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 0
+        width: 526
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163a2fe4ff0c4e700800000000000000
+      internalID: 568791655729242977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaccU idle_2
+      rect:
+        serializedVersion: 2
+        x: 1052
+        y: 0
+        width: 526
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43ff9cfcb5557570800000000000000
+      internalID: 8463765344893268815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaccU idle_3
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 0
+        width: 526
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ccbd183f3cac670800000000000000
+      internalID: 8559869492394183711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VaccU idle_4
+      rect:
+        serializedVersion: 2
+        x: 2104
+        y: 0
+        width: 526
+        height: 737
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662a4aeafc9e4b5e0800000000000000
+      internalID: -1894632465018609050
       vertices: []
       indices: 
       edges: []
@@ -126,7 +222,7 @@ TextureImporter:
     secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 
