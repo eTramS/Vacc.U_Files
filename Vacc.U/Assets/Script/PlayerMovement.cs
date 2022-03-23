@@ -11,9 +11,11 @@ public class PlayerMovement : MonoBehaviour
     bool isGrounded;
     float horizontal;
 
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
     }
 
@@ -25,14 +27,26 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
+          
+
         }
+        if (moveSpeed == 0)
+        {
+            anim.SetBool("New Bool", false);
+        }
+        else
+        {
+            anim.SetBool("New Bool", false);
+        }
+
+
     }
 
     void FixedUpdate()
     {
         if (isGrounded)
         {
-            body.AddForce(transform.right * horizontal * moveSpeed);
+            body.AddForce(transform.right* horizontal * moveSpeed);
         }
         sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
     }
@@ -41,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (obj.CompareTag("Planet"))
         {
-            body.drag = 1.5f;
+            body.drag = 1.2f;
 
             float distance = Mathf.Abs(obj.GetComponent<GravityPoint>().planetRadius - Vector2.Distance(transform.position, obj.transform.position));
             if (distance < 1f)
