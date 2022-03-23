@@ -16,10 +16,10 @@ public class PlayerPos : MonoBehaviour
 
      void Update()
     {
-        if ()
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
+       // if ()
+       // {
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        //}
     }
 
 
