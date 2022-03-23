@@ -30,14 +30,7 @@ public class PlayerMovement : MonoBehaviour
           
 
         }
-        if (moveSpeed == 0)
-        {
-            anim.SetBool("New Bool", false);
-        }
-        else
-        {
-            anim.SetBool("New Bool", false);
-        }
+       
 
 
     }
@@ -47,6 +40,14 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded)
         {
             body.AddForce(transform.right* horizontal * moveSpeed);
+            if (horizontal == 0)
+            {
+                anim.SetBool("isWalking", false);
+            }
+            else
+            {
+                anim.SetBool("isWalking", true);
+            }
         }
         sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
     }
