@@ -28,10 +28,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
-           body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
+            anim.SetTrigger("isJumping");
+            body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
             //body.AddForce(transform.right*horizontal*3f,ForceMode2D.Impulse);
 
         }
+        
         //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
         
 
@@ -44,13 +46,17 @@ public class PlayerMovement : MonoBehaviour
             body.AddForce(transform.right* horizontal * moveSpeed);
             if (horizontal == 0)
             {
+                //anim.SetBool("isJumping", false);
                 anim.SetBool("isWalking", false);
+                
                 //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
             }
             else
             {
+               // anim.SetBool("isJumping", false);
                 anim.SetBool("isWalking", true);
-               // Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
+                
+                // Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
 
             }
         }
