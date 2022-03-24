@@ -14,13 +14,7 @@ public class PlayerPos : MonoBehaviour
 
     }
 
-     void Update()
-    {
-       // if ()
-       // {
-        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //}
-    }
+   
 
 
 }
