@@ -5,7 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     private GameMaster gm;
-
+    public Sprite bushSpriteActivated;
      void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -15,6 +15,7 @@ public class Checkpoint : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            this.gameObject.GetComponent<SpriteRenderer>().sprite = bushSpriteActivated;
             gm.lastCheckPointPos = transform.position;
         }
     }
