@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer sprite;
     public GameObject Player0;
     public Vector3 localScale;
+    public Transform InjectP;
+    public float InjectRange=0.5f;
+    public LayerMask peopleLayers;
 
     Rigidbody2D body;
     bool isGrounded;
@@ -35,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (isGrounded && Input.GetKey(KeyCode.G))
         {
-            anim.SetTrigger("isVaccinating");
+            Vaccine();
             //Collider2D[] enemytoDamage = Physics2D.OverlapCircleAll(attackp.position,attackr,Wvaccine);            }
             //timeA = startA;
         }
@@ -90,4 +93,19 @@ public class PlayerMovement : MonoBehaviour
             body.drag = 0.5f;
         }
     }
+    void Vaccine() 
+    {
+
+
+        anim.SetTrigger("isVaccinating");
+        Collider2D[] injectPeople=Physics2D.OverlapCircleAll(InjectP.position, InjectRange,peopleLayers);
+
+    }
+     void OnDrawGizmosSelected()
+    { 
+        if (InjectP == null)
+            return;
+        Gizmos.DrawWireSphere(InjectP.position,InjectRange);
+    }
+
 }

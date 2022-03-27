@@ -31,4 +31,7 @@ public class VaccinatingScript : MonoBehaviour
             else { timeA -= Time.deltaTime; }
         }
     }
+
+    
+
 }
