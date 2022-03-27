@@ -33,9 +33,15 @@ public class PlayerMovement : MonoBehaviour
             //body.AddForce(transform.right*horizontal*3f,ForceMode2D.Impulse);
 
         }
-        
+        if (isGrounded && Input.GetKey(KeyCode.G))
+        {
+            anim.SetTrigger("isVaccinating");
+            //Collider2D[] enemytoDamage = Physics2D.OverlapCircleAll(attackp.position,attackr,Wvaccine);            }
+            //timeA = startA;
+        }
+
         //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
-        
+
 
     }
 
