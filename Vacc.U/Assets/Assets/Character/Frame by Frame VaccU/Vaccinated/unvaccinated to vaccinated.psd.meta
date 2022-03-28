@@ -35,6 +35,45 @@ TextureImporter:
   - first:
       213: -2230834735362985433
     second: unvaccinated commoner  idle_10
+  - first:
+      213: 2633017944673175940
+    second: unvaccinated to vaccinated_0
+  - first:
+      213: 5028795679296358209
+    second: unvaccinated to vaccinated_1
+  - first:
+      213: -3330483108322026626
+    second: unvaccinated to vaccinated_2
+  - first:
+      213: -7145115593817034683
+    second: unvaccinated to vaccinated_3
+  - first:
+      213: -9109958262974873392
+    second: unvaccinated to vaccinated_4
+  - first:
+      213: 1312316598238463785
+    second: unvaccinated to vaccinated_5
+  - first:
+      213: 8207526259182784271
+    second: unvaccinated to vaccinated_6
+  - first:
+      213: 7488520742407611271
+    second: unvaccinated to vaccinated_7
+  - first:
+      213: -6943687028786141226
+    second: unvaccinated to vaccinated_8
+  - first:
+      213: -5867425425278986291
+    second: unvaccinated to vaccinated_9
+  - first:
+      213: -1211559085028949087
+    second: unvaccinated to vaccinated_10
+  - first:
+      213: 602663258463780332
+    second: unvaccinated to vaccinated_11
+  - first:
+      213: 6195287649461115557
+    second: unvaccinated to vaccinated_12
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,7 +163,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_0
+      name: unvaccinated to vaccinated_0
       rect:
         serializedVersion: 2
         x: 0
@@ -138,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17aeffeae59c1ec90800000000000000
-      internalID: -7142206125532779919
+      spriteID: 489497fcedb5a8420800000000000000
+      internalID: 2633017944673175940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_1
+      name: unvaccinated to vaccinated_1
       rect:
         serializedVersion: 2
         x: 1000
@@ -159,14 +198,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baeb577bef9327150800000000000000
-      internalID: 5868817030579601067
+      spriteID: 1478a70d60fd9c540800000000000000
+      internalID: 5028795679296358209
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_2
+      name: unvaccinated to vaccinated_2
       rect:
         serializedVersion: 2
         x: 2000
@@ -180,14 +219,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58f8bbe430ac6bb60800000000000000
-      internalID: 7761613123374256005
+      spriteID: e7bd606324fb7c1d0800000000000000
+      internalID: -3330483108322026626
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_3
+      name: unvaccinated to vaccinated_3
       rect:
         serializedVersion: 2
         x: 3000
@@ -201,14 +240,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 191f3a632b3847710800000000000000
-      internalID: 1690120561614909841
+      spriteID: 5407e6f493377dc90800000000000000
+      internalID: -7145115593817034683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_4
+      name: unvaccinated to vaccinated_4
       rect:
         serializedVersion: 2
         x: 4000
@@ -222,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ce825b0de8895370800000000000000
-      internalID: 8311825138967547586
+      spriteID: 0d08fb8f93de29180800000000000000
+      internalID: -9109958262974873392
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_5
+      name: unvaccinated to vaccinated_5
       rect:
         serializedVersion: 2
         x: 5000
@@ -243,14 +282,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70d90ae7c70f12ba0800000000000000
-      internalID: -6115342401501356793
+      spriteID: 9274ade3ef8463210800000000000000
+      internalID: 1312316598238463785
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_6
+      name: unvaccinated to vaccinated_6
       rect:
         serializedVersion: 2
         x: 6000
@@ -264,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a68005182bd706e20800000000000000
-      internalID: 3341809129136064618
+      spriteID: f0fc74bb5adf6e170800000000000000
+      internalID: 8207526259182784271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_7
+      name: unvaccinated to vaccinated_7
       rect:
         serializedVersion: 2
         x: 7000
@@ -285,14 +324,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32aec9d0600f966e0800000000000000
-      internalID: -1843678663642650077
+      spriteID: 783a95870f19ce760800000000000000
+      internalID: 7488520742407611271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_8
+      name: unvaccinated to vaccinated_8
       rect:
         serializedVersion: 2
         x: 8000
@@ -306,14 +345,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ecbb5e422a0dfd80800000000000000
-      internalID: -8215399002794115870
+      spriteID: 6d7e6b1cf6113af90800000000000000
+      internalID: -6943687028786141226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_9
+      name: unvaccinated to vaccinated_9
       rect:
         serializedVersion: 2
         x: 9000
@@ -327,14 +366,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2e26c899ad70e0d0800000000000000
-      internalID: -3395575951671284181
+      spriteID: dc79624a9a7b29ea0800000000000000
+      internalID: -5867425425278986291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: unvaccinated commoner  idle_10
+      name: unvaccinated to vaccinated_10
       rect:
         serializedVersion: 2
         x: 10000
@@ -348,8 +387,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 722361ea0ab7a01e0800000000000000
-      internalID: -2230834735362985433
+      spriteID: 1a3c3786e6daf2fe0800000000000000
+      internalID: -1211559085028949087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unvaccinated to vaccinated_11
+      rect:
+        serializedVersion: 2
+        x: 11000
+        y: 0
+        width: 1000
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedb9ef5a071d5800800000000000000
+      internalID: 602663258463780332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unvaccinated to vaccinated_12
+      rect:
+        serializedVersion: 2
+        x: 12000
+        y: 0
+        width: 1000
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa9e7b0b451af550800000000000000
+      internalID: 6195287649461115557
       vertices: []
       indices: 
       edges: []
