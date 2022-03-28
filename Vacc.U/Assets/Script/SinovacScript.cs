@@ -18,39 +18,45 @@ public class SinovacScript : MonoBehaviour
         //anim.SetBool("bakunado", false);
         body = GetComponent<Rigidbody2D>();
         currentH = maxHealth;
-        
+        anim.SetBool("bakunado", false);
 
     }
-   
+    void Update()
+    {
+        //body.drag = 1.2f;
+        
+
+
+    }
+
     public void Injection(int turok)
     {
-        currentH -= turok;
-        //Debug.Log("Hit");
-        anim.SetTrigger("binabakunahan");
-
+        if (currentH > 0)
+        {
+            currentH -= turok;
+            //Debug.Log("Hit");
+            anim.SetTrigger("binabakunahan");
+        }
+      
         if (currentH<=0)
         {
             Bakunado();
            // this.GetComponent<SpriteRenderer>().sprite = Bakunadona;
         }
+        else anim.SetBool("bakunado", true);
 
     }
     void Bakunado()
     {
         anim.SetBool("bakunado", true);
+        
+        
+       //GetComponent<Collider2D>().isTrigger = true;
+       //this.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezeAll;
 
-        
-       // GetComponent<Collider2D>().isTrigger = true;
-        //this.enabled = false;
-        
     }
     // Update is called once per frame
-    void Update()
-    {
-        //body.drag = 1.2f;
-       
-    }
-
+  
     void OnTriggerStay2D(Collider2D obj)
     {
         if (obj.CompareTag("Planet"))

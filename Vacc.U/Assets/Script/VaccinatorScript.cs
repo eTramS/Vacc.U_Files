@@ -7,6 +7,8 @@ public class VaccinatorScript : MonoBehaviour
     public Transform InjectP;
     public float InjectRange = 0.5f;
     public LayerMask peopleLayers;
+    float nextInject = 0f;
+    public float nextInjectT = 2f;
    // bool isGrounded;
     private Animator anim;
 
@@ -21,11 +23,15 @@ public class VaccinatorScript : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.G))
+        if (Time.time >= nextInject)
         {
-            Vaccine();
-            //Collider2D[] enemytoDamage = Physics2D.OverlapCircleAll(attackp.position,attackr,Wvaccine);            }
-            //timeA = startA;
+            if (Input.GetKey(KeyCode.G))
+            {
+                Vaccine();
+                nextInject = Time.time + 1f / nextInjectT;
+                //Collider2D[] enemytoDamage = Physics2D.OverlapCircleAll(attackp.position,attackr,Wvaccine);            }
+                //timeA = startA;
+            }
         }
     }
     void Vaccine()
