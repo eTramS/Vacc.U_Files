@@ -13,10 +13,13 @@ public class GameMaster : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(instance);
-            //PlayerPrefs.DeleteKey("Bakunado");
+            
         }
         else
-        { //Destroy(gameObject); PlayerPrefs.GetInt("Bakunado"); }
+        { Destroy(gameObject); 
+            
+            
+             }
         }
     }
-}
+

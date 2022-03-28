@@ -18,9 +18,10 @@ public class SinovacScript : MonoBehaviour
         //anim.SetBool("bakunado", false);
         body = GetComponent<Rigidbody2D>();
         currentH = maxHealth;
-       
         
+
     }
+   
     public void Injection(int turok)
     {
         currentH -= turok;
@@ -37,7 +38,7 @@ public class SinovacScript : MonoBehaviour
     void Bakunado()
     {
         anim.SetBool("bakunado", true);
-        
+
         
        // GetComponent<Collider2D>().isTrigger = true;
         //this.enabled = false;
@@ -47,6 +48,7 @@ public class SinovacScript : MonoBehaviour
     void Update()
     {
         //body.drag = 1.2f;
+       
     }
 
     void OnTriggerStay2D(Collider2D obj)
