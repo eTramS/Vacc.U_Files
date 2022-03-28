@@ -74,6 +74,12 @@ TextureImporter:
   - first:
       213: 6195287649461115557
     second: unvaccinated to vaccinated_12
+  - first:
+      213: -3163166798677520594
+    second: unvaccinated to vaccinated_13
+  - first:
+      213: -1798629467885598465
+    second: unvaccinated to vaccinated_14
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -431,6 +437,48 @@ TextureImporter:
       bones: []
       spriteID: 5aa9e7b0b451af550800000000000000
       internalID: 6195287649461115557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unvaccinated to vaccinated_13
+      rect:
+        serializedVersion: 2
+        x: 13000
+        y: 0
+        width: 1000
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2f44874e8c2a14d0800000000000000
+      internalID: -3163166798677520594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: unvaccinated to vaccinated_14
+      rect:
+        serializedVersion: 2
+        x: 14000
+        y: 0
+        width: 1000
+        height: 968
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff8012c470cf907e0800000000000000
+      internalID: -1798629467885598465
       vertices: []
       indices: 
       edges: []
