@@ -8,27 +8,26 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer sprite;
     public GameObject Player0;
     public Vector3 localScale;
-    public Transform InjectP;
-    public float InjectRange=0.5f;
-    public LayerMask peopleLayers;
-
+    
+    //public Transform bod;
     Rigidbody2D body;
     bool isGrounded;
     float horizontal;
-
+    
     private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
     void Update()
-    {
+    {//input
         horizontal = Input.GetAxisRaw("Horizontal");
-
+        //jumping script
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             anim.SetTrigger("isJumping");
@@ -36,18 +35,14 @@ public class PlayerMovement : MonoBehaviour
             //body.AddForce(transform.right*horizontal*3f,ForceMode2D.Impulse);
 
         }
-        if (isGrounded && Input.GetKey(KeyCode.G))
-        {
-            Vaccine();
-            //Collider2D[] enemytoDamage = Physics2D.OverlapCircleAll(attackp.position,attackr,Wvaccine);            }
-            //timeA = startA;
-        }
+        //attack script
+        
 
         //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
 
 
     }
-
+    // Walking script and animator 
     void FixedUpdate()
     {
         if (isGrounded)
@@ -68,9 +63,18 @@ public class PlayerMovement : MonoBehaviour
                 // Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
 
             }
+
+            
         }
-        sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
+        //flip
+        if (horizontal > 0) { Player0.transform.localScale = new Vector3(0.10f, .10f, 0); }
+        if (horizontal < 0) { Player0.transform.localScale = new Vector3(-0.10f, .10f, 0); }
+        
+        //sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
+        //  transform.Translat = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
+
     }
+    
 
     void OnTriggerStay2D(Collider2D obj)
     {
@@ -93,19 +97,6 @@ public class PlayerMovement : MonoBehaviour
             body.drag = 0.5f;
         }
     }
-    void Vaccine() 
-    {
-
-
-        anim.SetTrigger("isVaccinating");
-        Collider2D[] injectPeople=Physics2D.OverlapCircleAll(InjectP.position, InjectRange,peopleLayers);
-
-    }
-     void OnDrawGizmosSelected()
-    { 
-        if (InjectP == null)
-            return;
-        Gizmos.DrawWireSphere(InjectP.position,InjectRange);
-    }
+   
 
 }

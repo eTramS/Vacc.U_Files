@@ -7,18 +7,20 @@ public class ObstaclesScript : MonoBehaviour
     
 {
     private GameMaster gm;
-    public GameObject player;
+    //public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
-        player.GetComponent<Collider2D>();
+        //player.GetComponent<Collider2D>();
     }
 
      void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Hit");
+       // Debug.Log("Hit");
 
-        if (player) { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); }
+        if (collision.tag== "Player" ) 
+        { SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); 
+             }
         
     }
 }
