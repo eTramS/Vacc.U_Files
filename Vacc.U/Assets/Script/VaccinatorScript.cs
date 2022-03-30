@@ -38,7 +38,8 @@ public class VaccinatorScript : MonoBehaviour
                 {
                     Destroy(Babakunahan[0].gameObject);
                     BAKUNADA[0].SetActive(true);
-                   
+                    PlayerPrefs.SetInt("NextLevel", 1);
+                    Debug.Log("Ready for next Level");
                 }
                 else if (Tao < 2)
                 {
