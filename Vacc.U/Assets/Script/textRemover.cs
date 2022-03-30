@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class NextLEVEL : MonoBehaviour
+
+public class textRemover : MonoBehaviour
 {
+    public GameObject wcTExt;
+    public GameObject stageText;
+    public GameObject controlText;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,17 +18,13 @@ public class NextLEVEL : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
+        if (collision.CompareTag("Player"))
         {
-            if (PlayerPrefs.GetInt("NextLevel") == 1)
-            {
-                //Scene.Load(1);
-                SceneManager.LoadScene(3);
-            }
-            else { Debug.Log("Kulang ka pa gago"); }
+            wcTExt.SetActive(false);
+            stageText.SetActive(false);
+            controlText.SetActive(false);
         }
     }
 }

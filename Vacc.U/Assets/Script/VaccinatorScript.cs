@@ -38,36 +38,43 @@ public class VaccinatorScript : MonoBehaviour
                 {
                     Destroy(Babakunahan[0].gameObject);
                     BAKUNADA[0].SetActive(true);
-                    PlayerPrefs.SetInt("NextLevel", 1);
+                    PlayerPrefs.SetInt("NextLevel", 2);
                     Debug.Log("Ready for next Level");
                 }
                 else if (Tao < 2)
                 {
                     Destroy(Babakunahan[1].gameObject);
                     BAKUNADA[1].SetActive(true);
-                    
+                    PlayerPrefs.DeleteKey("NextLevel");
 
                 }
                 else if (Tao < 3)
                 {
                     Destroy(Babakunahan[2].gameObject);
                     BAKUNADA[2].SetActive(true);
+                    PlayerPrefs.DeleteKey("NextLevel");
                 }
                 else if (Tao < 4)
                 {
                     Destroy(Babakunahan[3].gameObject);
                     BAKUNADA[3].SetActive(true);
+                    PlayerPrefs.DeleteKey("NextLevel");
                 }
                 else if (Tao < 5)
                 {
                    Destroy(Babakunahan[4].gameObject);
                     BAKUNADA[4].SetActive(true);
+                    PlayerPrefs.DeleteKey("NextLevel");
                 }
                 else if (Tao < 6)
                 {
                     Destroy(Babakunahan[5].gameObject);
                     BAKUNADA[5].SetActive(true);
-                }else { }
+                    Debug.Log("6");
+                    PlayerPrefs.DeleteKey("NextLevel");
+
+                }
+                else { }
             }
 
         }
