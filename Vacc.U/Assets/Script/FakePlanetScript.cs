@@ -6,6 +6,7 @@ public class FakePlanetScript : MonoBehaviour
 {
     public GameObject fakePlanet;
     public GameObject fakeSavep;
+    public GameObject warningT;
     void Start()
     {
         //fakePlanet.GetComponent<Rigidbody2D>();
@@ -15,6 +16,7 @@ public class FakePlanetScript : MonoBehaviour
         Destroy(fakePlanet);
         Destroy(fakeSavep);
         Destroy(gameObject);
+        Destroy(warningT);
        
     }
 

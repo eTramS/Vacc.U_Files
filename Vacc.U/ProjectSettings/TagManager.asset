@@ -49,3 +49,6 @@ TagManager:
   - name: obstacles
     uniqueID: 3340530309
     locked: 0
+  - name: text
+    uniqueID: 2639083431
+    locked: 0
