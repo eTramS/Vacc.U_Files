@@ -46,6 +46,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: bg
+  - name: obstacles
     uniqueID: 3340530309
     locked: 0
