@@ -653,7 +653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &101314288
 Transform:
   m_ObjectHideFlags: 0
@@ -1781,12 +1781,12 @@ GameObject:
   - component: {fileID: 384647906}
   - component: {fileID: 384647907}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 5
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &384647906
 Transform:
   m_ObjectHideFlags: 0
@@ -3109,6 +3109,7 @@ MonoBehaviour:
   Player0: {fileID: 656376141}
   localScale: {x: 0, y: 0, z: 0}
   dust: {fileID: 1759443570}
+  dust1: {fileID: 155027834337271631}
 --- !u!50 &656376147
 Rigidbody2D:
   serializedVersion: 4
@@ -3167,8 +3168,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1056719099
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 6990696036445340048, guid: 887663a89a711e848a36c24145bc9ef6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3194,6 +3195,7 @@ Transform:
   m_Children:
   - {fileID: 1585118790}
   - {fileID: 1759443569}
+  - {fileID: 155027834337271633}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3585,12 +3587,12 @@ GameObject:
   - component: {fileID: 720880723}
   - component: {fileID: 720880724}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 2
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &720880723
 Transform:
   m_ObjectHideFlags: 0
@@ -3823,8 +3825,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -954436987
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5ceb9fdfffcd0bf4fa2440f88746af6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4334,12 +4336,12 @@ GameObject:
   - component: {fileID: 925346853}
   - component: {fileID: 925346854}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 3
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &925346853
 Transform:
   m_ObjectHideFlags: 0
@@ -4808,8 +4810,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -954436987
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5ceb9fdfffcd0bf4fa2440f88746af6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5264,7 +5266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1189128587
 Transform:
   m_ObjectHideFlags: 0
@@ -6034,12 +6036,12 @@ GameObject:
   - component: {fileID: 1323466304}
   - component: {fileID: 1323466305}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 8
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1323466304
 Transform:
   m_ObjectHideFlags: 0
@@ -6116,12 +6118,12 @@ GameObject:
   - component: {fileID: 1363469012}
   - component: {fileID: 1363469013}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 6
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1363469012
 Transform:
   m_ObjectHideFlags: 0
@@ -6376,12 +6378,12 @@ GameObject:
   - component: {fileID: 1496432259}
   - component: {fileID: 1496432260}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 4
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1496432259
 Transform:
   m_ObjectHideFlags: 0
@@ -6708,8 +6710,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -954436987
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5ceb9fdfffcd0bf4fa2440f88746af6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8454,12 +8456,12 @@ GameObject:
   - component: {fileID: 1867467776}
   - component: {fileID: 1867467777}
   m_Layer: 0
-  m_Name: Circle (2)
+  m_Name: 7
   m_TagString: Planet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1867467776
 Transform:
   m_ObjectHideFlags: 0
@@ -9289,8 +9291,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -954436987
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5ceb9fdfffcd0bf4fa2440f88746af6c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
@@ -10025,6 +10027,16 @@ MonoBehaviour:
   planet: {fileID: 2136790667}
   minRS: {fileID: 0}
   maxRS: {fileID: 0}
+--- !u!198 &155027834337271631 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7292986891489765149, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+  m_PrefabInstance: {fileID: 7427315456730167378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &155027834337271633 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+  m_PrefabInstance: {fileID: 7427315456730167378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!61 &5732222469775868977
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10135,3 +10147,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &7427315456730167378
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 656376149}
+    m_Modifications:
+    - target: {fileID: 7292986891489765122, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_Name
+      value: DustJump (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292986891489765123, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}

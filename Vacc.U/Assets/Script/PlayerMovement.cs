@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject Player0;
     public Vector3 localScale;
     public ParticleSystem dust;
+    public ParticleSystem dust1;
  
     //public Transform bod;
     Rigidbody2D body;
@@ -54,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 //anim.SetBool("isJumping", false);
                 anim.SetBool("isWalking", false);
-               
+                //transform.rotation = Quaternion.Euler(0f,0f,0f);
+                body.constraints = RigidbodyConstraints2D.FreezeRotation;
 
                 //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
             }
@@ -62,7 +64,8 @@ public class PlayerMovement : MonoBehaviour
             {
                // anim.SetBool("isJumping", false);
                 anim.SetBool("isWalking", true);
-                
+                body.constraints = RigidbodyConstraints2D.None;
+                DustWalk();
                 // Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
 
             }
@@ -104,5 +107,9 @@ public class PlayerMovement : MonoBehaviour
     {
         dust.Play();
     }
-  
+    void DustWalk()
+    {
+        dust1.Play();
+    }
+
 }
