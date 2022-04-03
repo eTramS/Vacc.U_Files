@@ -8,7 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public SpriteRenderer sprite;
     public GameObject Player0;
     public Vector3 localScale;
-    
+    public ParticleSystem dust;
+ 
     //public Transform bod;
     Rigidbody2D body;
     bool isGrounded;
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             anim.SetTrigger("isJumping");
+            DustJump();
             body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
             //body.AddForce(transform.right*horizontal*3f,ForceMode2D.Impulse);
 
@@ -52,7 +54,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 //anim.SetBool("isJumping", false);
                 anim.SetBool("isWalking", false);
-                
+               
+
                 //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
             }
             else
@@ -67,10 +70,10 @@ public class PlayerMovement : MonoBehaviour
             
         }
         //flip
-        if (horizontal > 0) { Player0.transform.localScale = new Vector3(0.10f, .10f, 0); }
-        if (horizontal < 0) { Player0.transform.localScale = new Vector3(-0.10f, .10f, 0); }
+        if (horizontal > 0) { Player0.transform.localScale = new Vector3(0.10f, .10f, 0);  }
+        if (horizontal < 0) { Player0.transform.localScale = new Vector3(-0.10f, .10f, 0);  }
         
-        //sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
+       // sprite.flipX = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
         //  transform.Translat = horizontal > 0 ? false : (horizontal < 0 ? true : sprite.flipX);
 
     }
@@ -97,6 +100,9 @@ public class PlayerMovement : MonoBehaviour
             body.drag = 0.5f;
         }
     }
-   
-
+   void DustJump()
+    {
+        dust.Play();
+    }
+  
 }
