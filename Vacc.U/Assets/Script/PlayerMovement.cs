@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetTrigger("isJumping");
             DustJump();
             body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
+            
             //body.AddForce(transform.right*horizontal*3f,ForceMode2D.Impulse);
 
         }

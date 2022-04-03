@@ -782,15 +782,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7292986891489765149, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.5471698
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7292986891489765149, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5471698
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7292986891489765149, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.5471698
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af7ff7123120eb54b8904d9f37c56c1c, type: 3}
@@ -9254,15 +9254,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 155027832735566133, guid: 7e7b73aec1e8f9b4a9b8f9e3ea41d327, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 155027832735566133, guid: 7e7b73aec1e8f9b4a9b8f9e3ea41d327, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 155027832735566133, guid: 7e7b73aec1e8f9b4a9b8f9e3ea41d327, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.5566038
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e7b73aec1e8f9b4a9b8f9e3ea41d327, type: 3}
+--- !u!1001 &5181991744251655575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 221827529436727887, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_Name
+      value: ParrticleSys
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
