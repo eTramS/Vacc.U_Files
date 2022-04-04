@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 public class NextLEVEL : MonoBehaviour
 {
     public Animator transitionPAPA;
-    public float TransPAPA=3f;
+    public float TransPAPA=10f;
     public GameObject missingObjective;
     public GameObject EnterStage2;
     [SerializeField] private AudioSource NextlevelSFX;
     [SerializeField] private AudioSource failedSFX;
+    public GameObject canvass;
     // Start is called before the first frame update
     void Start()
     {
 
         missingObjective.SetActive(false); 
         EnterStage2.SetActive(false);
+        canvass.SetActive(true);
     }
 
     // Update is called once per frame
@@ -54,9 +56,11 @@ public class NextLEVEL : MonoBehaviour
 
     IEnumerator LOADlevel()
     {
+        canvass.SetActive(true);
         NextlevelSFX.Play();
         transitionPAPA.SetTrigger("start");
         yield return new WaitForSeconds(TransPAPA);
+        Time.timeScale = 1f;
         SceneManager.LoadScene(3);
     }
 

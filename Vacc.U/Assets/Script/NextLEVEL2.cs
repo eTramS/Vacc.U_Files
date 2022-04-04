@@ -11,12 +11,14 @@ public class NextLEVEL2 : MonoBehaviour
     public GameObject EnterStage2;
     [SerializeField] private AudioSource NextlevelSFX;
     [SerializeField] private AudioSource failedSFX;
+    public GameObject canvass;
     // Start is called before the first frame update
     void Start()
     {
         PlayerPrefs.DeleteKey("NextLevel");
         missingObjective.SetActive(false);
         EnterStage2.SetActive(false);
+        canvass.SetActive(true);
     }
 
     // Update is called once per frame
@@ -56,9 +58,11 @@ public class NextLEVEL2 : MonoBehaviour
 
     IEnumerator LOADleve2()
     {
+        canvass.SetActive(true);
         NextlevelSFX.Play();
         transitionPAPA.SetTrigger("start");
         yield return new WaitForSeconds(TransPAPA);
+        Time.timeScale = 1f;
         SceneManager.LoadScene(1);
     }
 

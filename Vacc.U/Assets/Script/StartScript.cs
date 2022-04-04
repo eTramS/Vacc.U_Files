@@ -5,10 +5,64 @@ using UnityEngine.SceneManagement;
 
 public class StartScript : MonoBehaviour
 {
+    public Animator crossfade;
+    public GameObject Canvasss;
+   // public Canvas cv;
+   
+    public float TransPAPA = 2f;
+    public void Start()
+    {
+        Canvasss.SetActive(true);
+       
+    }
     public void _Start()
     {
+        
+        StartCoroutine(startlvl());
+        
+      
+    }
+
+    public void About()
+    {
+
+        StartCoroutine(About_());
+
+
+    }
+    public void MAINMENU()
+    {
+
+        StartCoroutine(BackToM());
+
+
+    }
+
+    IEnumerator startlvl()
+    {
         PlayerPrefs.DeleteKey("NextLevel");
+        crossfade.SetTrigger("start");
+       Canvasss.SetActive(false);
+        yield return new WaitForSeconds(TransPAPA);
         Time.timeScale = 1f;
         SceneManager.LoadScene(2);
+    }
+    IEnumerator About_()
+    {
+        PlayerPrefs.DeleteKey("NextLevel");
+        crossfade.SetTrigger("start");
+        Canvasss.SetActive(false);
+        yield return new WaitForSeconds(TransPAPA);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(4);
+    }
+    IEnumerator BackToM()
+    {
+        PlayerPrefs.DeleteKey("NextLevel");
+        crossfade.SetTrigger("start");
+        Canvasss.SetActive(false);
+        yield return new WaitForSeconds(TransPAPA);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(1);
     }
 }
