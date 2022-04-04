@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayerPos : MonoBehaviour
 {
     private GameMaster gm;
-
+   
+    [SerializeField] private AudioSource ouchSFX;
      void Start()
     {
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -21,7 +22,9 @@ public class PlayerPos : MonoBehaviour
 
         if (collision.tag == "Rock")
         {
+            ouchSFX.Play();
             transform.position = gm.lastCheckPointPos;
+            
             //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             //
             // GameObject.FindGameObjectWithTag("Player").transform.position

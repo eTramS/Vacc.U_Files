@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class SinovacScript : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 50;
     int currentH;
     public Animator anim;
     bool isGrounded;
     Rigidbody2D body;
     public Sprite estado;
-   // public int Tao;
-   
+    [SerializeField] private AudioSource bakunadoS;
+    // public int Tao;
 
-  //public GameObject[] Babakunahan;
-   //public GameObject[] BAKUNADA;
+
+    //public GameObject[] Babakunahan;
+    //public GameObject[] BAKUNADA;
 
     //public Sprite Bakunadona;
     // Start is called before the first frame update
@@ -90,10 +91,10 @@ public class SinovacScript : MonoBehaviour
     void Bakunado()
     {
         anim.SetBool("bakunado", true);
-
+        bakunadoS.Play();
        
-        //GetComponent<Collider2D>().isTrigger = true;
-        //this.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezeAll;
+        GetComponent<Collider2D>().enabled = false;
+        this.GetComponent<Rigidbody2D>().constraints= RigidbodyConstraints2D.FreezeAll;
 
     }
     // Update is called once per frame

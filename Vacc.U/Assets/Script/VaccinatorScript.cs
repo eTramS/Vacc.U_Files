@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class VaccinatorScript : MonoBehaviour
 {
+    [SerializeField] private AudioSource injectingS;
     public Transform InjectP;
     public float InjectRange = 0.5f;
     public LayerMask peopleLayers;
@@ -15,11 +16,12 @@ public class VaccinatorScript : MonoBehaviour
 
     public GameObject[] Babakunahan;
     public GameObject[] BAKUNADA;
+    [SerializeField] private AudioSource finishSFX;
     void Start()
     {
         anim = GetComponent<Animator>();
-       
-        
+        finishSFX.Pause();
+
     }
 
 
@@ -31,6 +33,7 @@ public class VaccinatorScript : MonoBehaviour
             if (Input.GetKey(KeyCode.G))
             {
                 Vaccine();
+                injectingS.Play();
                 nextInject = Time.time + 1f / nextInjectT;
                 //Collider2D[] enemytoDamage = Physics2D.OverlapCircleAll(attackp.position,attackr,Wvaccine);            }
                 //timeA = startA;
@@ -38,6 +41,7 @@ public class VaccinatorScript : MonoBehaviour
                 {
                     Destroy(Babakunahan[0].gameObject);
                     BAKUNADA[0].SetActive(true);
+                    finishSFX.Play();
                     PlayerPrefs.SetInt("NextLevel", 2);
                     Debug.Log("Ready for next Level");
                 }

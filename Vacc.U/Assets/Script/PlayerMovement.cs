@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 localScale;
     public ParticleSystem dust;
     public ParticleSystem dust1;
- 
+    
+    [SerializeField] private AudioSource jumpingS;
+    [SerializeField] private AudioSource walkingS;
     //public Transform bod;
     Rigidbody2D body;
     bool isGrounded;
@@ -33,8 +35,10 @@ public class PlayerMovement : MonoBehaviour
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
             anim.SetTrigger("isJumping");
-            DustJump();
             body.AddForce(transform.up * jumpPower, ForceMode2D.Impulse);
+            DustJump();
+            jumpingS.Play();
+            
             
             //body.AddForce(transform.right*horizontal*3f,ForceMode2D.Impulse);
 
@@ -58,7 +62,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("isWalking", false);
                 //transform.rotation = Quaternion.Euler(0f,0f,0f);
                 body.constraints = RigidbodyConstraints2D.FreezeRotation;
-
+                walkingS.Play();
                 //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
             }
             else
@@ -67,6 +71,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("isWalking", true);
                 body.constraints = RigidbodyConstraints2D.None;
                 DustWalk();
+               
                 // Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
 
             }
