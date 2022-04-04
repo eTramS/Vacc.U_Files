@@ -37,7 +37,7 @@ public class NextLEVEL2 : MonoBehaviour
             if (PlayerPrefs.GetInt("NextLevel") == 2)
             {
                 //Scene.Load(1);
-                SceneManager.LoadScene(1);
+                
                 StartCoroutine(LOADleve2());
             }
             else
@@ -59,7 +59,7 @@ public class NextLEVEL2 : MonoBehaviour
         NextlevelSFX.Play();
         transitionPAPA.SetTrigger("start");
         yield return new WaitForSeconds(TransPAPA);
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(1);
     }
 
 }
