@@ -7,12 +7,14 @@ public class StartScript : MonoBehaviour
 {
     public Animator crossfade;
     public GameObject Canvasss;
+   
    // public Canvas cv;
    
     public float TransPAPA = 2f;
     public void Start()
     {
         Canvasss.SetActive(true);
+       
        
     }
     public void _Start()
@@ -36,6 +38,10 @@ public class StartScript : MonoBehaviour
         StartCoroutine(BackToM());
 
 
+    }
+    public void QUITg()
+    {
+        Application.Quit();
     }
 
     IEnumerator startlvl()
