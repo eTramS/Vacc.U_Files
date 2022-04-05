@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed=10f, jumpPower=10f;
+    public float moveSpeed=5f, jumpPower=8f;
     public SpriteRenderer sprite;
     public GameObject Player0;
     public Vector3 localScale;
