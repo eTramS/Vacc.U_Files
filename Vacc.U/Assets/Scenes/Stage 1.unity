@@ -6572,7 +6572,6 @@ GameObject:
   - component: {fileID: 1689870958}
   - component: {fileID: 1689870959}
   - component: {fileID: 1689870957}
-  - component: {fileID: 1689870960}
   - component: {fileID: 1689870961}
   - component: {fileID: 1689870962}
   - component: {fileID: 1689870963}
@@ -6708,6 +6707,7 @@ MonoBehaviour:
   localScale: {x: 0, y: 0, z: 0}
   dust: {fileID: 1021817041}
   dust1: {fileID: 195318252}
+  ouchSFX: {fileID: 1783549057}
   jumpingS: {fileID: 1689870962}
   walkingS: {fileID: 1689870964}
 --- !u!95 &1689870959
@@ -6729,19 +6729,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1689870960
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1689870953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b220bbe4ba858d548ac40f74403fa54c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ouchSFX: {fileID: 1783549057}
 --- !u!114 &1689870961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7677,7 +7664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &1814019415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8748,7 +8735,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &2076781065
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9261,6 +9248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FinisSFX
       objectReference: {fileID: 0}
+    - target: {fileID: 514657363148159574, guid: 7bc4cebade8d7384091ffa330c71a8e7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 514657363148159575, guid: 7bc4cebade8d7384091ffa330c71a8e7, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -9317,6 +9308,10 @@ PrefabInstance:
     - target: {fileID: 1759300176164077975, guid: 9456d76ff1a666649be98721fcec2af3, type: 3}
       propertyPath: m_Name
       value: objectivesSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 1759300176164077975, guid: 9456d76ff1a666649be98721fcec2af3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1759300176164077993, guid: 9456d76ff1a666649be98721fcec2af3, type: 3}
       propertyPath: m_RootOrder
@@ -9419,6 +9414,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: savepointSFX
       objectReference: {fileID: 0}
+    - target: {fileID: 2108040092061644518, guid: 366930e727b7eb540ad1a29f78bbe7fe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 366930e727b7eb540ad1a29f78bbe7fe, type: 3}
 --- !u!1001 &3003995616755695834
@@ -9480,6 +9479,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3003995616190450172, guid: ca1fc62c0d32c3c489fe2aa0cf88fe84, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca1fc62c0d32c3c489fe2aa0cf88fe84, type: 3}
 --- !u!1001 &3074035022815166423
@@ -9537,6 +9540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ouchSFX
       objectReference: {fileID: 0}
+    - target: {fileID: 3074035021041840983, guid: d0b6cf3f971fb3e42b374bfbc08aca64, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0b6cf3f971fb3e42b374bfbc08aca64, type: 3}
 --- !u!1001 &5181991744251655575
@@ -9549,6 +9556,10 @@ PrefabInstance:
     - target: {fileID: 221827529436727887, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
       propertyPath: m_Name
       value: ParrticleSys
+      objectReference: {fileID: 0}
+    - target: {fileID: 221827529436727887, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2312094372197512711, guid: 40c9b27510b5fc6498092a694a9ac4a4, type: 3}
       propertyPath: m_RootOrder

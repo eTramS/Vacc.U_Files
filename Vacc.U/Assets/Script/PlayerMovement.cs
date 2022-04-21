@@ -10,7 +10,9 @@ public class PlayerMovement : MonoBehaviour
     public Vector3 localScale;
     public ParticleSystem dust;
     public ParticleSystem dust1;
-    
+    private GameMaster gm;
+
+    [SerializeField] private AudioSource ouchSFX;
     [SerializeField] private AudioSource jumpingS;
     [SerializeField] private AudioSource walkingS;
     //public Transform bod;
@@ -22,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         
@@ -99,6 +102,18 @@ public class PlayerMovement : MonoBehaviour
             {
                 isGrounded = distance < 0.5f;
             }
+        }
+        if (obj.tag == "Rock")
+        {
+
+            ouchSFX.Play();
+            body.constraints = RigidbodyConstraints2D.FreezeAll;
+            transform.position = gm.lastCheckPointPos;
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //
+            // GameObject.FindGameObjectWithTag("Player").transform.position
+
+
         }
     }
 
