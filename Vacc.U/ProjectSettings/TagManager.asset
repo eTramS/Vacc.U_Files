@@ -49,6 +49,12 @@ TagManager:
   - name: player
     uniqueID: 1056719099
     locked: 0
+  - name: savepoints
+    uniqueID: 4293611639
+    locked: 0
+  - name: platform
+    uniqueID: 1541976935
+    locked: 0
   - name: obstacles
     uniqueID: 3340530309
     locked: 0
