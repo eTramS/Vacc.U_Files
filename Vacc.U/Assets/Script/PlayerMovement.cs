@@ -53,6 +53,10 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
+    protected void LateUpdate()
+    {
+        transform.localEulerAngles = new Vector3(0, 0, transform.localEulerAngles.z);
+    }
     // Walking script and animator 
     void FixedUpdate()
     {
@@ -65,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
                 anim.SetBool("isWalking", false);
                 //transform.rotation = Quaternion.Euler(0f,0f,0f);
                 body.constraints = RigidbodyConstraints2D.FreezeRotation;
+                
                 walkingS.Play();
                 //Player0.transform.localScale = new Vector3(-0.10f, .10f, 0.11f);
             }
