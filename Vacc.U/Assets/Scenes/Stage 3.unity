@@ -216,9 +216,9 @@ GameObject:
   - component: {fileID: 34800327}
   - component: {fileID: 34800326}
   - component: {fileID: 34800328}
-  - component: {fileID: 34800329}
   - component: {fileID: 34800330}
   - component: {fileID: 34800331}
+  - component: {fileID: 34800332}
   m_Layer: 0
   m_Name: headquarter (1)
   m_TagString: Untagged
@@ -317,25 +317,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.876257, y: 3.477811}
   m_EdgeRadius: 0
---- !u!114 &34800329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 34800325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 470b323bcd0f8cf4e94cd44cdda1dabb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  transitionPAPA: {fileID: 1411913267}
-  TransPAPA: 1
-  missingObjective: {fileID: 1814019414}
-  EnterStage2: {fileID: 2076781064}
-  NextlevelSFX: {fileID: 34800331}
-  failedSFX: {fileID: 34800330}
-  canvass: {fileID: 1700112489}
 --- !u!82 &34800330
 AudioSource:
   m_ObjectHideFlags: 0
@@ -528,6 +509,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &34800332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34800325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0da2f6c4ac1e7a4ba02da81e6dca6fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transitionPAPA: {fileID: 0}
+  TransPAPA: 3
+  missingObjective: {fileID: 1814019414}
+  EnterStage2: {fileID: 2076781064}
+  NextlevelSFX: {fileID: 34800331}
+  failedSFX: {fileID: 34800330}
+  canvass: {fileID: 1700112489}
 --- !u!1 &79326622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1968,7 +1968,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &515529303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9892,7 +9892,7 @@ GameObject:
   - component: {fileID: 2076781066}
   - component: {fileID: 2076781065}
   m_Layer: 0
-  m_Name: TextEnterStage2
+  m_Name: TextEnterStage4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

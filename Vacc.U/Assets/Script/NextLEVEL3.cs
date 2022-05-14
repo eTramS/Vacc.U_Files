@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class NextLEVEL : MonoBehaviour
+
+public class NextLEVEL3 : MonoBehaviour
 {
     public Animator transitionPAPA;
-    public float TransPAPA=3f;
+    public float TransPAPA = 3f;
     public GameObject missingObjective;
     public GameObject EnterStage2;
     [SerializeField] private AudioSource NextlevelSFX;
@@ -15,7 +16,7 @@ public class NextLEVEL : MonoBehaviour
     void Start()
     {
 
-        missingObjective.SetActive(false); 
+        missingObjective.SetActive(false);
         EnterStage2.SetActive(false);
         canvass.SetActive(true);
     }
@@ -28,7 +29,7 @@ public class NextLEVEL : MonoBehaviour
             EnterStage2.SetActive(true);
             missingObjective.SetActive(false);
         }
-          
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -38,11 +39,11 @@ public class NextLEVEL : MonoBehaviour
             if (PlayerPrefs.GetInt("NextLevel") == 2)
             {
                 //Scene.Load(1);
-                
+
                 StartCoroutine(LOADlevel());
             }
-            else 
-            { 
+            else
+            {
                 //Debug.Log("Kulang ka pa gago");
                 missingObjective.SetActive(true);
                 failedSFX.Play();
@@ -61,9 +62,7 @@ public class NextLEVEL : MonoBehaviour
         transitionPAPA.SetTrigger("start");
         yield return new WaitForSeconds(TransPAPA);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
-
-
 
 }
