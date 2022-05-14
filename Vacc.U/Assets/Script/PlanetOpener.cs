@@ -6,11 +6,13 @@ public class PlanetOpener : MonoBehaviour
 {
      //public GameObject wcTExt;
     public GameObject stageText;
+    public GameObject peps;
     //public GameObject controlText;
     // Start is called before the first frame update
     void Start()
     {
-
+        stageText.SetActive(false);
+        peps.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,6 +26,7 @@ public class PlanetOpener : MonoBehaviour
         {
             // wcTExt.SetActive(false);
             stageText.SetActive(true);
+            peps.SetActive(true);
             // controlText.SetActive(false);
         }
     }
