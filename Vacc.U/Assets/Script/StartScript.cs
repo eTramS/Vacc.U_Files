@@ -51,7 +51,7 @@ public class StartScript : MonoBehaviour
        Canvasss.SetActive(false);
         yield return new WaitForSeconds(TransPAPA);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
     IEnumerator About_()
     {
@@ -60,7 +60,7 @@ public class StartScript : MonoBehaviour
         Canvasss.SetActive(false);
         yield return new WaitForSeconds(TransPAPA);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(2);
     }
     IEnumerator BackToM()
     {

@@ -63,7 +63,7 @@ public class NextLEVEL2 : MonoBehaviour
         transitionPAPA.SetTrigger("start");
         yield return new WaitForSeconds(TransPAPA);
         Time.timeScale = 1f;
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
 }
