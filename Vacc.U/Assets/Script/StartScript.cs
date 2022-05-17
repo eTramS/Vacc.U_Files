@@ -14,7 +14,7 @@ public class StartScript : MonoBehaviour
     public void Start()
     {
         Canvasss.SetActive(true);
-       
+        Time.timeScale = 1f;
        
     }
     public void _Start()
