@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PauseG : MonoBehaviour
 {
     public GameObject PauseCanvaas;
+    public GameObject PauseButton;
+    public GameObject ResumeButton;
     public Animator transitionPAPA;
     //public GameObject canvass;
     public float TransPAPA = .5f;
@@ -27,22 +29,34 @@ public class PauseG : MonoBehaviour
             if (GameIsPaused)
             { Resume_(); }
             else 
-            { Pause(); }
+            { Pause();  }
            
 
 
         }
 
     }
+    public void GPause()
+    {
+        Pause();
+
+    }
+    public void GResume()
+    {
+        Resume_();
+  
+    }
 
     void Pause()
     {
+        PauseButton.SetActive(false); ResumeButton.SetActive(true);
         PauseCanvaas.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
     public void Resume_()
     {
+        PauseButton.SetActive(true); ResumeButton.SetActive(false);
         PauseCanvaas.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;
