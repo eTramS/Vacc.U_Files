@@ -2,21 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class FakePlanetScript : MonoBehaviour
 {
     public GameObject fakePlanet;
     public GameObject fakeSavep;
     public GameObject warningT;
+   
     void Start()
     {
         //fakePlanet.GetComponent<Rigidbody2D>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        
         Destroy(fakePlanet);
         Destroy(fakeSavep);
-        Destroy(gameObject);
+        //Destroy(gameObject);
         Destroy(warningT);
+
        
     }
 
