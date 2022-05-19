@@ -33,6 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Bad end.unity
     guid: fa80fd95e27a196499f088259ec96b8d
   - enabled: 1
-    path: Assets/Scenes/Good end.unity
-    guid: 10026fb5941ddb9479d7d27d783ca644
+    path: Assets/Scenes/Bad end 1.unity
+    guid: cfb5f31176b25c245a829312a60f178a
   m_configObjects: {}

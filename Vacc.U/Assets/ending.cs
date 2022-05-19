@@ -19,7 +19,7 @@ public class ending : MonoBehaviour
     { if (Input.anyKeyDown)
         {
             StartCoroutine(BackToM());
-            Debug.Log("ok");
+            
         }
         
     }
