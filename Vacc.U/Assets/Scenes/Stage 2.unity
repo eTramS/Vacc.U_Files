@@ -1187,7 +1187,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d9ec5bcfaecda541b152d60e18df888, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionPAPA: {fileID: 0}
+  transitionPAPA: {fileID: 1961667449}
   TransPAPA: 3
   missingObjective: {fileID: 386917449}
   EnterStage2: {fileID: 1595702105}
@@ -8035,6 +8035,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1907825672844458264, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2132577906}
+    - target: {fileID: 1907825672844458269, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: transitionPAPA
+      value: 
+      objectReference: {fileID: 1961667449}
+    - target: {fileID: 6205158276175415544, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2132577906}
+    - target: {fileID: 7874311686649355162, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: camera_
+      value: 
+      objectReference: {fileID: 2132577905}
+    - target: {fileID: 7874311686649355162, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: transitionPAPA
+      value: 
+      objectReference: {fileID: 1961667449}
     - target: {fileID: 8075200023705728913, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
       propertyPath: m_Camera
       value: 
@@ -8042,11 +8062,11 @@ PrefabInstance:
     - target: {fileID: 8075200023705728925, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
       propertyPath: camera_
       value: 
-      objectReference: {fileID: 2132577906}
+      objectReference: {fileID: 2132577905}
     - target: {fileID: 8075200023705728925, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
       propertyPath: transitionPAPA
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1961667449}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
 --- !u!1 &1862354178
@@ -8743,6 +8763,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f68307ce5bafdc4db8a00ab37b81f95, type: 3}
+--- !u!95 &1961667449 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 690749845887079907, guid: 8f68307ce5bafdc4db8a00ab37b81f95, type: 3}
+  m_PrefabInstance: {fileID: 1961667448}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1967336332
 GameObject:
   m_ObjectHideFlags: 0

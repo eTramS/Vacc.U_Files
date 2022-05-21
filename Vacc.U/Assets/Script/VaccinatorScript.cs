@@ -21,7 +21,7 @@ public class VaccinatorScript : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         finishSFX.Pause();
-
+        PlayerPrefs.DeleteKey("NextLevel");
     }
 
 

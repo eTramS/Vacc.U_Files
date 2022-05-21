@@ -9,7 +9,7 @@ public class PauseG : MonoBehaviour
     public GameObject PauseButton;
     public GameObject ResumeButton;
     public Animator transitionPAPA;
-    public Camera camera_;
+   
     //public GameObject canvass;
     public float TransPAPA = 2f;
     public static bool GameIsPaused = false;
@@ -17,7 +17,7 @@ public class PauseG : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
         Time.timeScale = 1f;
 
     }
@@ -50,7 +50,10 @@ public class PauseG : MonoBehaviour
 
     void Pause()
     {
-        camera_.GetComponent<AudioListener>().enabled = false;
+        AudioListener.pause = true;
+
+
+        
         PauseButton.SetActive(false); ResumeButton.SetActive(true);
         PauseCanvaas.SetActive(true);
         Time.timeScale = 0f;
@@ -58,7 +61,9 @@ public class PauseG : MonoBehaviour
     }
     public void Resume_()
     {
-        camera_.GetComponent<AudioListener>().enabled = true; 
+        AudioListener.pause = false;
+
+
         PauseButton.SetActive(true); ResumeButton.SetActive(false);
         PauseCanvaas.SetActive(false);
         Time.timeScale = 1f;

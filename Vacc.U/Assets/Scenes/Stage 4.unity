@@ -1623,6 +1623,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1907825672844458264, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1009188725}
+    - target: {fileID: 1907825672844458269, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: transitionPAPA
+      value: 
+      objectReference: {fileID: 1411913267}
+    - target: {fileID: 6205158276175415544, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1009188725}
+    - target: {fileID: 7874311686649355162, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: camera_
+      value: 
+      objectReference: {fileID: 1009188724}
+    - target: {fileID: 7874311686649355162, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
+      propertyPath: transitionPAPA
+      value: 
+      objectReference: {fileID: 1411913267}
     - target: {fileID: 8075200023705728913, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1630,7 +1650,7 @@ PrefabInstance:
     - target: {fileID: 8075200023705728925, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
       propertyPath: camera_
       value: 
-      objectReference: {fileID: 1009188725}
+      objectReference: {fileID: 1009188724}
     - target: {fileID: 8075200023705728925, guid: 0db445ca22c03cc469a4a5a99a949961, type: 3}
       propertyPath: transitionPAPA
       value: 

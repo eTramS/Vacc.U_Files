@@ -13,6 +13,9 @@ public class StartScript : MonoBehaviour
     public float TransPAPA = 2f;
     public void Start()
     {
+        AudioListener.pause = false;
+
+
         Canvasss.SetActive(true);
         Time.timeScale = 1f;
        
